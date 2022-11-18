@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="Patterns"/>
 	<classpathentry kind="src" path="Function__&amp;__Arrays"/>
+	<classpathentry kind="src" path="2D-Arrays"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
