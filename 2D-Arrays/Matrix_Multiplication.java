@@ -3,7 +3,7 @@ public class Matrix_Multiplication {
 
 	public static void main(String[] args) {
 		
-		int A[][]=generateMatrix(4,3);
+		int A[][]=generateMatrix(3,3);
 //		int B[][]=generateMatrix(3,2);
 //		int C[][]=matrixMultiplication(A,B);
 //		
@@ -93,11 +93,23 @@ public class Matrix_Multiplication {
 	{
 		int row=mat.length;
 		int col=mat[0].length;
-		for(int i=0;i<row;i++)
+		for(int j=0;j<col;j++)
 		{
-			for(int j=0;j<col;j++)
+			if(j%2==0)
 			{
-				System.out.print(mat[j][i]+" ");
+				for(int i=0;i<row;i++)
+				{
+					System.out.print(mat[i][j]+" ");
+				}
+				
+			}
+			else
+			{
+				for(int i=row-1;i>=0;i--)
+				{
+					System.out.print(mat[i][j]+" ");
+				}
+				
 			}
 		}
 	}
