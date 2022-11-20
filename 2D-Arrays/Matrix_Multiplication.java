@@ -4,12 +4,12 @@ public class Matrix_Multiplication {
 	public static void main(String[] args) {
 		
 		int A[][]=generateMatrix(3,3);
-//		int B[][]=generateMatrix(3,2);
-//		int C[][]=matrixMultiplication(A,B);
-//		
+		int B[][]=generateMatrix(3,2);
+		int C[][]=matrixMultiplication(A,B);
+		
 		printMatrix(A);
-//		printMatrix(B);
-//		printMatrix(C);
+		printMatrix(B);
+		printMatrix(C);
 		
 		stateOfWakanda_I(A);
 		
@@ -72,6 +72,7 @@ public class Matrix_Multiplication {
 		
 		int ans[][]=new int[r1][c2];
 		for(int i=0;i<r1;i++)
+			
 		{
 			for(int j=0;j<c2;j++)
 			{
